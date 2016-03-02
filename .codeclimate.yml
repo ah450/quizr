@@ -1,0 +1,40 @@
+engines:
+  brakeman:
+    enabled: true
+  bundler-audit:
+    enabled: true
+  csslint:
+    enabled: false
+  coffeelint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+  rubocop:
+    enabled: true
+  scss-lint:
+    enabled: true
+ratings:
+  paths:
+  - Gemfile.lock
+  - "**.erb"
+  - "**.rb"
+  - "**.coffee"
+  - "web-client/gulp-tasks/**/*.js"
+  - "web-client/gulpfile.js"
+  - "**.scss"
+exclude_paths:
+- config/
+- db/
+- spec/
+- test/
+- vendor/
+- web-client/polyfills/
+- web-client/src/style/vendor/
+- web-client/src/services/wrappers/

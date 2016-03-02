@@ -1,0 +1,25 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 120
+
+development:
+  <<: *default
+  database: quizr_development
+  username: quizr
+  password: quizr
+  min_messages: warning
+
+test:
+  <<: *default
+  database: quizr_testing
+  username: quizr
+  password: quizr
+  min_messages: warning
+
+production:
+  <<: *default
+  database: <%= ENV['DB_NAME'] %>
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASSWORD'] %>

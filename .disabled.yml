@@ -1,0 +1,17 @@
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+Style/GlobalVars:
+  Enabled: false
+
+Style/CaseEquality:
+  Enabled: false
