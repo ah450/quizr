@@ -1,6 +1,6 @@
 engines:
   brakeman:
-    enabled: true
+    enabled: false
   bundler-audit:
     enabled: true
   csslint:
@@ -22,7 +22,7 @@ engines:
     enabled: true
 ratings:
   paths:
-  - Gemfile.lock
+  - QuizrApi/Gemfile.lock
   - "**.erb"
   - "**.rb"
   - "**.coffee"
